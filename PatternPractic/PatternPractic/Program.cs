@@ -8,7 +8,8 @@ namespace PatternPractic
     public static void Main(string[] args)
     {
       var storageService = new StorageService();
-      var exportService = new ExportService(storageService);
+      var encryptService = new EncryptService();
+      var exportService = new ExportService(storageService, encryptService);
 
       while (true)
       {
@@ -20,10 +21,10 @@ namespace PatternPractic
           case "1":
             exportService.Export(1, @"C:\Test\ASD");
             Console.WriteLine("Описание экспортированного компонента:");
-            storageService.Get(1);
+            storageService.Get(1).Display();
             break;
           case "2":
-
+            exportService.ExportWithEncrypt(1, @"D:\Asd");
             break;
           case "3":
 

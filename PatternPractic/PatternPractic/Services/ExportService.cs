@@ -8,6 +8,7 @@ namespace PatternPractic.Services
   public class ExportService : IExportService
   {
     private readonly IStorageService storageService;
+    private readonly IEncryptService encryptService;
 
     public void Export(int id, string path)
     {
@@ -19,9 +20,19 @@ namespace PatternPractic.Services
       Console.WriteLine("-----------------------");
     }
 
-    public ExportService(IStorageService storageService)
+    public void ExportWithEncrypt(int id, string path)
+    {
+      Export(id, path);
+
+      encryptService.Encrypt(new object());
+    }
+
+    public ExportService(
+      IStorageService storageService,
+      IEncryptService encryptService)
     {
       this.storageService = storageService;
+      this.encryptService = encryptService;
     }
   }
 }
