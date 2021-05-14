@@ -9,6 +9,7 @@ namespace PatternPractic.Services
   {
     private readonly IStorageService storageService;
     private readonly IEncryptService encryptService;
+    private readonly IArchiveService archiveService;
 
     public void Export(int id, string path)
     {
@@ -27,12 +28,21 @@ namespace PatternPractic.Services
       encryptService.Encrypt(new object());
     }
 
+    public void ExportWithArchive(int id, string path)
+    {
+      Export(id, path);
+
+      archiveService.Archive(new object());
+    }
+
     public ExportService(
       IStorageService storageService,
-      IEncryptService encryptService)
+      IEncryptService encryptService,
+      IArchiveService archiveService)
     {
       this.storageService = storageService;
       this.encryptService = encryptService;
+      this.archiveService = archiveService;
     }
   }
 }

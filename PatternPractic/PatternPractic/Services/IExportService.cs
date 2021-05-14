@@ -18,5 +18,12 @@
     /// <param name="id">Id экспортируемого объекта.</param>
     /// <param name="path">Папка, куда будет экспортирован объект.</param>
     void ExportWithEncrypt(int id, string path);
+
+    /// <summary>
+    /// Экспортировать объект с архивацией.
+    /// </summary>
+    /// <param name="id">Id экспортируемого объекта.</param>
+    /// <param name="path">Папка, куда будет экспортирован объект.</param>
+    void ExportWithArchive(int id, string path);
   }
 }

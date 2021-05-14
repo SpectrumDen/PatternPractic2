@@ -9,7 +9,8 @@ namespace PatternPractic
     {
       var storageService = new StorageService();
       var encryptService = new EncryptService();
-      var exportService = new ExportService(storageService, encryptService);
+      var archiveService = new ArchiveService();
+      var exportService = new ExportService(storageService, encryptService, archiveService);
 
       while (true)
       {
@@ -27,9 +28,8 @@ namespace PatternPractic
             exportService.ExportWithEncrypt(1, @"D:\Asd");
             break;
           case "3":
-
+            exportService.ExportWithArchive(1, @"E:\qwerty");
             break;
-
           default:
             break;
         }
