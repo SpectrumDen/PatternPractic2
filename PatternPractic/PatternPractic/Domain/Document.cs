@@ -1,6 +1,7 @@
 ﻿using System;
+using PatternPractic.Extensions;
 
-namespace PatternPractic
+namespace PatternPractic.Domain
 {
   public class Document : Component
   {

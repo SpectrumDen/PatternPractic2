@@ -1,4 +1,4 @@
-﻿namespace PatternPractic
+﻿namespace PatternPractic.Domain
 {
   public interface IComposite : IComponent
   {

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace PatternPractic
+namespace PatternPractic.Extensions
 {
   public static class IntExtensions
   {

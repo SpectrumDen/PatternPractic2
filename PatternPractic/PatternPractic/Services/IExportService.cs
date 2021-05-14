@@ -1,4 +1,4 @@
-﻿namespace PatternPractic
+﻿namespace PatternPractic.Services
 {
   /// <summary>
   /// Контракт сервиса экспортированию объектов.

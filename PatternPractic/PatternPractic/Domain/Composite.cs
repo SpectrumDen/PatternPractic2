@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using PatternPractic.Extensions;
 
-namespace PatternPractic
+namespace PatternPractic.Domain
 {
   /// <summary>
   /// Комплект объектов.

@@ -1,4 +1,6 @@
-﻿namespace PatternPractic
+﻿using PatternPractic.Domain;
+
+namespace PatternPractic.Services
 {
   public class StorageService : IStorageService
   {

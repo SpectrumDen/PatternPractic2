@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PatternPractic
+namespace PatternPractic.Services
 {
   /// <summary>
   /// Сервис по экспортированию документов.
