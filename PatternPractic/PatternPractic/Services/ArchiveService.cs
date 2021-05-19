@@ -1,7 +1,7 @@
 ﻿using System;
 using PatternPractic.Services;
 
-namespace PatternPractic
+namespace PatternPractic.Services
 {
   public class ArchiveService : IArchiveService
   {
