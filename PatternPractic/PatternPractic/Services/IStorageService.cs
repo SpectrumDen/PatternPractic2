@@ -12,6 +12,6 @@ namespace PatternPractic.Services
     /// </summary>
     /// <param name="id">Id объекта.</param>
     /// <returns>Объект.</returns>
-    IComponent Get(int id);
+    IDocument Get(int id);
   }
 }

@@ -1,7 +1,7 @@
 ﻿namespace PatternPractic.Domain
 {
-  public interface IComposite : IComponent
+  public interface IComposite : IDocument
   {
-    void Add(IComponent component);
+    void Add(IDocument component);
   }
 }

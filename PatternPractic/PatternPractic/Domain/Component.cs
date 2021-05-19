@@ -1,6 +1,6 @@
 ﻿namespace PatternPractic.Domain
 {
-  public abstract class Component : IComponent
+  public abstract class Component : IDocument
   {
     public int Id { get; set; }
     public string Name { get; set; }

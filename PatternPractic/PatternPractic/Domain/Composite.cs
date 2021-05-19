@@ -9,14 +9,14 @@ namespace PatternPractic.Domain
   /// </summary>
   public class Composite : IComposite
   {
-    private readonly List<IComponent> components = new List<IComponent>();
+    private readonly List<IDocument> components = new List<IDocument>();
 
     public int Id { get; set; }
     public string Name { get; set; }
 
     public string Description { get; }
 
-    public void Add(IComponent component)
+    public void Add(IDocument component)
     {
       this.components.Add(component);
     }

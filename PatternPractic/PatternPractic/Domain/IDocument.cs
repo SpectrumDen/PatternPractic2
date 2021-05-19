@@ -1,6 +1,6 @@
 ﻿namespace PatternPractic.Domain
 {
-  public interface IComponent
+  public interface IDocument
   {
     int Id { get; set; }
     string Name { get; set; }
